@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="regGrid"  alignment="TOP_CENTER" hgap="10" prefHeight="200.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrationController">
+    <columnConstraints>
+      <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+        <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="txtRegLogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+        <TextField fx:id="txtRegPassword" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+          <Button fx:id="btn_RegisterFinish" alignment="CENTER" mnemonicParsing="false" onAction="#btnRegistrationAction" prefHeight="31.0" prefWidth="110.0" text="Register" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="btnBackWelcome" mnemonicParsing="false" onAction="#btnBackWelcomeAction" prefHeight="31.0" prefWidth="106.0" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Login:      " GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Password:" GridPane.rowIndex="3">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="lbl_LoginReg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lbl_PasswordReg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lbl_FinishReg" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Registration page" GridPane.columnIndex="1" GridPane.columnSpan="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</GridPane>
